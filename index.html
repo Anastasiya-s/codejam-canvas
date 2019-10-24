@@ -4,36 +4,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header>
-    <nav class="main_nav">
-    </nav>
-    <h1 class="page_title">Codejam Canvas</h1>
-    <nav class="options">
-    </nav>
-  </header>
-  <main>
-    <canvas id="canvas" width="512" height="512">
-
-    </canvas>
-  </main>
-  <aside>
-    <ul class="options_group">
-      <li class="option"></li>
-      <li class="option"></li>
-      <li class="option"></li>
-      <li class="option"></li>
-      <li class="option"></li>
-    </ul>
-    <ul class="options_group">
-        <li class="option"></li>
-        <li class="option"></li>
-        <li class="option"></li>
-        <li class="option"></li>
-        <li class="option"></li>
-      </ul>
+  <div class="page_body">
+    <header class="page_header">
+      <nav class="main_nav">
+        <button class="menu_button">
+          <img class="menu_button-icon" src="./img/nav-icon.svg" alt="Menu">
+        </button>
+        <ul class="canvas_options visually-hidden">
+          <li class="canvas_option">4*4</li>
+          <li class="canvas_option">32*32</li>
+          <li class="canvas_option">256*256</li>
+        </ul>
+      </nav>
+      <h1 class="page_title">Codejam Canvas</h1>
+      <nav class="options">
+      </nav>
+    </header>
+    <main class="page_main">
+      <aside class="side_menu">
+        <ul class="options_group canvas_sizes">
+          <li class="option canvas_size">4*4</li>
+          <li class="option canvas_size">32*32</li>
+          <li class="option canvas_size">256*256</li>
+        </ul>
+        <ul class="options_group">
+            <li class="option">option 1</li>
+            <li class="option">option 2</li>
+            <li class="option">option 3</li>
+            <li class="option">option 4</li>
+            <li class="option">option 5</li>
+          </ul>
+      
+      </aside>
+      <canvas id="canvas" width="512" height="512">
   
-  </aside>
+      </canvas>
+    </main>
+  </div>
 </body>
 </html>
