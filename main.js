@@ -1,3 +1,4 @@
+const sizeOptionsList = document.querySelector('.canvas_sizes');
 const field = document.getElementById('canvas');
 const fieldSize = 512; 
 const ctx = field.getContext("2d");
@@ -41,18 +42,21 @@ const drawPicture = () => {
   img.src = fetchedUrl;
 }
 
-document.querySelector('.canvas_size--4').addEventListener('click', function() {
-  setUrl('small');
-  fetchColorsMatrix(drawHexColorMatrix);
-});
-document.querySelector('.canvas_size--32').addEventListener('click', function() {
-  setUrl('medium');
-  fetchColorsMatrix(drawRgbaColorMatrix);
-});
-document.querySelector('.canvas_size--256').addEventListener('click', function() {
-  setUrl('pic');
-  drawPicture();
-});
-
-
+document.addEventListener('DOMContentLoaded', () => 
+  sizeOptionsList.addEventListener('click', (e) => {
+    const item = e.target.dataset.item;
+    setUrl(item);
+    switch(item) {
+      case 'small':
+        fetchColorsMatrix(drawHexColorMatrix);
+        return;
+      case 'medium':
+        fetchColorsMatrix(drawRgbaColorMatrix);
+        return;
+      case 'pic':
+        drawPicture();
+        return;
+    }
+  })
+)
 
