@@ -1,0 +1,23 @@
+{
+  "name": "codejam-canvas",
+  "version": "1.0.0",
+  "description": "codejam",
+  "main": "main.js",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "start": "live-server --port=5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiya-s/codejam-canvas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anastasiya-s/codejam-canvas/issues"
+  },
+  "homepage": "https://github.com/Anastasiya-s/codejam-canvas#readme"
+}
+
