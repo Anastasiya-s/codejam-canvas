@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="page_body">
+    <header class="page_header">
+      <nav class="main_nav">
+        <button class="menu_button">
+          <img class="menu_button-icon" src="./img/nav-icon.svg" alt="Menu">
+        </button>
+        <ul class="canvas_options visually-hidden">
+          <li class="canvas_option">4*4</li>
+          <li class="canvas_option">32*32</li>
+          <li class="canvas_option">256*256</li>
+        </ul>
+      </nav>
+      <h1 class="page_title">Codejam Canvas</h1>
+    </header>
+    <main class="page_main">
+      <aside class="side_menu">
+        <ul class="options_group canvas_sizes">
+          <li class="option canvas_size canvas_size--4" data-item="4">4*4</li>
+          <li class="option canvas_size canvas_size--32" data-item="32">32*32</li>
+          <li class="option canvas_size canvas_size--256" data-item="image">256*256</li>
+        </ul>
+      </aside>
+      <canvas id="canvas" width="512" height="512"></canvas>
+    </main>
+  </div>
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
